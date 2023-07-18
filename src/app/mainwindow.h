@@ -12,6 +12,9 @@ class MainWindow : public QMainWindow {
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 
+   private slots:
+    void open();
+
    private:
     QMenu* file_menu_;
     QAction* open_action_;
