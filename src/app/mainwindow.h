@@ -2,8 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QAction>
+#include <QHBoxLayout>
+#include <QImage>
+#include <QLabel>
 #include <QMainWindow>
 #include <QMenu>
+#include <QWidget>
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -24,5 +28,10 @@ class MainWindow : public QMainWindow {
 
     QMenu* help_menu_;
     QAction* about_action_;
+
+    QWidget* widget_;
+    QHBoxLayout* layout_;
+    QLabel* image_label_;
+    QImage image_;
 };
 #endif  // MAINWINDOW_H

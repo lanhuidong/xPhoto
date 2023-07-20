@@ -8,7 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 list(APPEND CMAKE_PREFIX_PATH "/Users/lanhuidong/Qt")
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets Gui)
 qt_standard_project_setup()
 
 add_subdirectory(src/app)
